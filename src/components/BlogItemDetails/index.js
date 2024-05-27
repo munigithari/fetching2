@@ -16,15 +16,15 @@ class BlogItemDetails extends Component {
     const {match} = this.props
     const {params} = match
     const {id} = params
-    const response = await fetch(`https://apis.ccbp.in/blogs/${id}`)
+    const response = await fetch(`https://apis.ccbp.in/blogs/:${id}`)
     const data = await response.json()
-    const updatedData = data.map(eachItem => ({
-      title: eachItem.title,
-      imageUrl: eachItem.image_url,
-      content: eachItem.content,
-      avatarUrl: eachItem.avatar_url,
-      author: eachItem.author,
-    }))
+    const updatedData = {
+      title: data.title,
+      imageUrl: data.image_url,
+      content: data.content,
+      avatarUrl: data.avatar_url,
+      author: data.author,
+    }
     this.setState({blogData: updatedData, isLoading: false})
   }
 

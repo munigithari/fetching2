@@ -1,1 +1,49 @@
 /* Write your CSS code here */
+.image1 {
+  height: 250px;
+  width: 320px;
+  background-size: cover;
+}
+.image2 {
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  align-self : flex-start;
+}
+.mini-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items : center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left : 30px;
+}
+.container4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  color: #000000;
+  font-size: 25px;
+  font-family: 'Roboto';
+  align-self: flex-start;
+}
+.paragraph {
+  color: #8e8e8e;
+  font-size: 15px;
+  font-family: 'Roboto';
+  align-self: flex-start;
+}
+.paragraph2 {
+  color: #8e8e8e;
+  font-size: 15px;
+  font-family: 'Roboto';
+  align-self: center;
+}

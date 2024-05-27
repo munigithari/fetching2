@@ -37,7 +37,7 @@ class BlogList extends Component {
         ) : (
           <ul className="container">
             {blogData.map(eachItem => (
-              <BlogItem key={eachItem.id} blogsDetails={eachItem} />
+              <BlogItem key={eachItem.id} blogsItemDetails={eachItem} />
             ))}
           </ul>
         )}
